@@ -16,8 +16,8 @@ if __name__ == '__main__':
     a = x
     S, n = a, 1
     while math.fabs(a) > EPS:
-        a *= (x * ((2 * n) + 1)) / (((2 * n) + 1) ** 2)
+        a *= (x * ((2 * n) + 1)) / (((2 * n) + 2) ** 2) 
         S += a
         n += 1
 
-print(f"Ei({x}) = {EULER + math.log(math.fabs(x)) + S}")
+print(f"Es({x}) = {EULER + math.log(math.fabs(x)) + S}")
